@@ -42,7 +42,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   user
   ```
 
-> ps: 未编写设置头像的功能，默认头像是：https://gd-hbimg.huaban.com/a0a833a39d4a6763877d7152a96d07a6ab1746142c55c-QuCQax_fw658webp。需要修改请打开数据库中的user表，修改avatar字段。
+> ps: 未编写设置头像的功能，默认头像是：https://gd-hbimg.huaban.com/a0a833a39d4a6763877d7152a96d07a6ab1746142c55c-QuCQax_fw658webp
+> 需要修改请打开数据库中的user表，修改avatar字段。
 
 ### 上传图片
 
