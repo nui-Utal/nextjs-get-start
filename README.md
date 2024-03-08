@@ -1,24 +1,64 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+本项目参考并实现了该视频的项目：https://www.youtube.com/watch?v=VE8BkImUciY 
 
-First, run the development server:
+> 但使用了本地mysql数据库（视频使用云的mongodb），在dashboard的数据刷新方式略有不同，不支持使用谷歌/github进行登录
+
+老师的代码：https://github.com/safak/nextjs-tutorial
+
+## 运行项目
+
+以npm为例，请先下载依赖：
+
+```bash
+npm i
+```
+
+本项目连接本地的 `mysql` 数据库，请确保当你运行时已经修改了 `.env` 文件参数，我的数据是 `test.sql` 
+
+然后启动项目：
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 功能体验tips
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 登录
+
+点击 `dashboar` 需要登录，推荐使用这个账号：
+
+- email
+
+  ```
+  user@gmail.com
+  ```
+
+- password
+
+  ```
+  user
+  ```
+
+### 上传图片
+
+nextjs不推荐引用外部图片，而当你需要引用外部图片时，需要 “登记” 图片的域名，可以在 `next.config.mjs` 中添加或修改
+
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        	// 分别是视频使用的图片网站，花瓣，微信公众号
+        domains: ['images.pexels.com','gd-hbimg.huaban.com', 'mmbiz.qpic.cn'],
+    },
+};
+
+export default nextConfig;
+```
+
+
 
 ## Learn More
 
