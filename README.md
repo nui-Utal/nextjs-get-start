@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 本项目参考并实现了该视频的项目：https://www.youtube.com/watch?v=VE8BkImUciY 
 
-> 但使用了本地mysql数据库（视频使用云的mongodb），在dashboard的数据刷新方式略有不同，不支持使用谷歌/github进行登录
+> 本使用了本地mysql数据库（视频使用云的mongodb）；在dashboard的数据刷新方式略有不同；关于第三方登录：不支持使用谷歌，而支持使用github
 
 老师的代码：https://github.com/safak/nextjs-tutorial
 
@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### 登录
 
-点击 `dashboar` 需要登录，推荐使用这个账号：
+点击 `dashboar` 需要登录/注册，推荐使用这个账号：
 
 - email
 
@@ -41,6 +41,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   ```
   user
   ```
+
+> ps: 未编写设置头像的功能，默认头像是：https://gd-hbimg.huaban.com/a0a833a39d4a6763877d7152a96d07a6ab1746142c55c-QuCQax_fw658webp。需要修改请打开数据库中的user表，修改avatar字段。
 
 ### 上传图片
 

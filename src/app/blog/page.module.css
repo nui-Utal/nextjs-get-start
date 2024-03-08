@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.content {}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.dosc {
+    font-size: 18px;
+}
+
+.test {
+    background-color: azure;
+    color: black;
+}
